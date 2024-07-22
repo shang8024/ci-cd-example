@@ -27,7 +27,7 @@ jobs:
             - name: Testing frontend
               run: |
                   ls
-                  cd frontend
+                  cd client
                   npm install
                   npm test
 
