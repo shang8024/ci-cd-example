@@ -1,5 +1,5 @@
 backend/node_modules
 backend/coverage
 backend/dist
-frontend/node_modules
-frontend/coverage
+client/node_modules
+client/coverage
