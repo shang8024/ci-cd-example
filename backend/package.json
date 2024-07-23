@@ -19,5 +19,55 @@
     "pg": "^8.12.0",
     "redis": "^4.6.15",
     "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testTimeout": 30000,
+    "roots": [
+      "<rootDir>"
+    ],
+    "modulePaths": [
+      "<rootDir>/routes"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "routes"
+    ],
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "ts",
+      "tsx"
+    ],
+    "collectCoverageFrom": [
+      "**/routes/**/*.js",
+      "!**/node_modules/**",
+      "**/config/*.js",
+      "**/marketing_system/**/*.js",
+      "**/models/*.js"
+    ],
+    "coverageReporters": [
+      [
+        "lcov",
+        {
+          "projectRoot": ".."
+        }
+      ],
+      [
+        "text",
+        {
+          "skipFull": true
+        }
+      ],
+      "text-summary"
+    ]
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
   }
+}
 }
