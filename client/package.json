@@ -15,7 +15,7 @@
   "scripts": {
     "start": "cross-env REACT_APP_BACKEND=localhost react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
+    "test": "react-scripts test --coverage --watchAll=false --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject",
     "tutorial": "npm install && npm start",
     "docker": "cross-env REACT_APP_BACKEND=localhost react-scripts start"
